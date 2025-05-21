@@ -19,7 +19,9 @@ In ASCII art, each pixel is represented by a character from a predefined ASCII c
 Bright characters (' ', '.') represent lighter pixels.
 Dark characters ('#', '@') represent darker pixels.
 Example ASCII scale (from lightest to darkest):
+
 🧱 Steps Involved:
+
 1. Choose an Image Format:
    
 Start with an easy format like PGM (Portable GrayMap) or BMP because they have simpler headers.
@@ -38,11 +40,11 @@ For PGM (ASCII P2 or binary P5), it's easier as they are grayscale by design.
 
 gray = 0.299 * R + 0.587 * G + 0.114 * B 
 
-5. Map Pixels to ASCII Characters:
+4. Map Pixels to ASCII Characters:
    
 Normalize grayscale value (0–255) to the index of your ASCII character set.
 
-6. Print or Save the ASCII Art:
+5. Print or Save the ASCII Art:
    
 Loop over all pixels and print the corresponding ASCII character.
 You can print to console or write to a text file.
