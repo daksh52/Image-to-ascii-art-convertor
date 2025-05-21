@@ -21,11 +21,13 @@ Dark characters ('#', '@') represent darker pixels.
 Example ASCII scale (from lightest to darkest):
 🧱 Steps Involved:
 1. Choose an Image Format:
+   
 Start with an easy format like PGM (Portable GrayMap) or BMP because they have simpler headers.
 
 You can also use external libraries (like stb_image.h or libbmp) to load images.
 
 2. Read the Image File:
+   
 Read image metadata (width, height, and pixel data).
 
 If using BMP, skip the header and parse the pixels.
@@ -33,12 +35,15 @@ If using BMP, skip the header and parse the pixels.
 For PGM (ASCII P2 or binary P5), it's easier as they are grayscale by design.
 
 3. Convert RGB to Grayscale (if using color images) using this formula:
+
 gray = 0.299 * R + 0.587 * G + 0.114 * B 
 
-4. Map Pixels to ASCII Characters:
+5. Map Pixels to ASCII Characters:
+   
 Normalize grayscale value (0–255) to the index of your ASCII character set.
 
-5. Print or Save the ASCII Art:
+6. Print or Save the ASCII Art:
+   
 Loop over all pixels and print the corresponding ASCII character.
 You can print to console or write to a text file.
 
