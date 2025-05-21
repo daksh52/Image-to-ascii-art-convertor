@@ -35,14 +35,15 @@ For PGM (ASCII P2 or binary P5), it's easier as they are grayscale by design.
 3. Convert RGB to Grayscale (if using color images) using this formula:
 gray = 0.299 * R + 0.587 * G + 0.114 * B 
 
-4. Map Pixels to ASCII Characters
+4. Map Pixels to ASCII Characters:
 Normalize grayscale value (0–255) to the index of your ASCII character set.
 
-5. Print or Save the ASCII Art
+5. Print or Save the ASCII Art:
 Loop over all pixels and print the corresponding ASCII character.
 You can print to console or write to a text file.
 
 🛠️ Tools & Libraries
+
 Language: C
 
 Optional Libraries:
@@ -56,6 +57,7 @@ Compiler: gcc/clang
 Text Editor/IDE: VS Code, Code::Blocks, etc.
 
 📈 Learning Outcomes
+
 1.Understanding image formats.
 
 2.File handling in C.
@@ -67,6 +69,7 @@ Text Editor/IDE: VS Code, Code::Blocks, etc.
 5.Console/text file output.
 
 🧩 Possible Extensions
+
 1.Support for color images.
 
 2.Use dynamic image loading (e.g., using stb_image.h).
